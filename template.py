@@ -28,7 +28,7 @@ list_of_files= [
     "schema.yaml",
     "main.py",
     "app.py",
-    "requirement.text",
+    "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
     "templates/index.html"

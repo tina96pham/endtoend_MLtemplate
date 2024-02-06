@@ -51,16 +51,18 @@ End to End Implementation:
 ### 3. Project setup
 - Step 1: Create Virtual environment
  ```bash
- conda create -n <envname> python=<version> -y
+ conda create -n <envname/project_name> python=<version> 
+ #Example : conda create -n mlProject python=3.8 -y
  ```
 - Step 2: Activate  the virtual environment
 ```bash
  conda activate <envname>
 ```
-OR permanently turn on the environment for project folder
+OR 
     1. CTRL/CMD + SHIFT + P
     2. Type : Select Interpreter
     3. Choose the created env
+    
 - Step 3: Set up requirement.txt to include all the python libraries package with version use in the project. 
 ```bash 
 pip install -r requirements.txt
