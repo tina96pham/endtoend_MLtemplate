@@ -5,7 +5,7 @@ with open ("README.md", "r", encoding='utf-8') as f:
 
 __version__="0.0.0"
 
-REPO_NAME= "EndtoEndMLProject"
+REPO_NAME= "endtoend_MLtemplate"
 AUTHOR_USER_NAME= "tina96pham"
 SRC_REPO="mlProject"
 GITHUB_URL=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}"
