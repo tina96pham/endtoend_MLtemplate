@@ -46,7 +46,7 @@ End to End Implementation:
     git commit -m <message>
     ```
     ``` bash
-     git push origin main 
+    git push origin main 
     ```
 ### 3. Project setup
 - Step 1: Create Virtual environment
