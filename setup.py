@@ -9,7 +9,7 @@ REPO_NAME= "EndtoEndMLProject"
 AUTHOR_USER_NAME= "tina96pham"
 SRC_REPO="mlProject"
 GITHUB_URL=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}"
-AUTHOR_EMAIL= "someemail@email.com"
+AUTHOR_EMAIL= "tina96pham@gmail.com"
 
 setuptools.setup(
     name=f"{REPO_NAME}-src",

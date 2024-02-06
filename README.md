@@ -62,7 +62,7 @@ OR
     1. CTRL/CMD + SHIFT + P
     2. Type : Select Interpreter
     3. Choose the created env
-    
+
 - Step 3: Set up requirement.txt to include all the python libraries package with version use in the project. 
 ```bash 
 pip install -r requirements.txt
@@ -73,7 +73,7 @@ pip install -r requirements.txt
     - Following this guide https://packaging.python.org/tutorials/packaging-projects/
     - Run setup.py to allow calling function from other file
     ```bash
-     python setup.py
+     python setup.py install
      ``` 
     - Ex: calling function from src/mlProject/config/configuration
     ```python 
