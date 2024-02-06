@@ -33,12 +33,14 @@ End to End Implementation:
         - .gitignore (Optional but recommended)
         -  LICENSE (Optional but recommended) --> LICENSE is setup during the creation of the repo
 ## 2. Template SetUp
-- Create template.py
-- Follow the structure from template.py
-- Automation to create folder or file by running the file
-    ```python template.py```
-    This will create a basic project structure with all necessary files in place
-    - Update repo 
+- Step 1: Create template.py
+- Step 2: Follow the structure from template.py
+- Step 3: Automation to create folder or file by running the file
+    ```python
+    python template.py
+    ```
+- This will create a basic project structure with all necessary files in place
+- Step 4: Update repo 
     ```bash 
     git add .
     ```
@@ -71,21 +73,34 @@ pip install -r requirements.txt
 
 - Step 4: Create setup.py
     - Following this guide https://packaging.python.org/tutorials/packaging-projects/
-    - Run setup.py to allow calling function from other file
+    - 4.1 Run setup.py to allow calling function from other file
     ```bash
      python setup.py install
      ``` 
     - Ex: calling function from src/mlProject/config/configuration
+    - 4.2 Paste this code in main.py 
     ```python 
     from src.mlProject.config import configuration
     ```
-
+    - 4.3 run main.py
+     ```python 
+    python main.py
+    ```
+- Check logs folder for message
 ### 4.1 Logging
 - Install logging package (https://docs.python.org/3/library/logging.html
 - Located src/mlProject/__init__.py 
 ```python 
 from mlProject import logger 
 ```
+- Testing: paste this code to main.py
+
+```python
+from src.mlProject import logger 
+
+logger.info("testing log")
+```
+
 - create logging folder
 ```python
 from src.mlProject.logging import logger
@@ -100,7 +115,12 @@ from src.mlProject.logging import logger
 - Create utility for frequent use code to access in different components of the project in common.py
 - Use for common utility in the project such as load json file,... ensure production grade code
 
-### 6 Workflow
+### 6.1. Notebooks
+- EDA
+- Model Building and Training
+- Data Visualization
+
+### 6.2 Workflow
 1. update config.yaml
 2. update schema.yaml 
     - In schema: include columns and target columns and data type
