@@ -77,7 +77,7 @@ pip install -r requirements.txt
      ``` 
     - Ex: calling function from src/mlProject/config/configuration
     ```python 
-    from srs.mlProject.config import configuration
+    from src.mlProject.config import configuration
     ```
 
 ### 4.1 Logging

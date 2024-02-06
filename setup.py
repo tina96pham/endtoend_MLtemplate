@@ -12,12 +12,13 @@ GITHUB_URL=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}"
 AUTHOR_EMAIL= "tina96pham@gmail.com"
 
 setuptools.setup(
-    name=f"{REPO_NAME}-src",
+    name=SRC_REPO,
     version= __version__,
     author= AUTHOR_USER_NAME,
     author_email= AUTHOR_EMAIL,
     description="Source code of ml app",
     long_description=  long_description,
+    long_description_content_type="text/markdown",
     url=  GITHUB_URL,
     project_urls= {
         'Bug Tracker': f'{GITHUB_URL}/issues',
