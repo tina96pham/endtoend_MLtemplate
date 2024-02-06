@@ -1,4 +1,3 @@
-# endtoend_MLtemplate
 ## Overview
 1. Repo Setup
 2. Project Template creation
@@ -26,9 +25,9 @@ End to End Implementation:
 ## 1. Repo SetUp
 - Step 1:. Use GitHub to create a new repo  with the desired project name. 
 - Step 2: Then use Git Bash or Command Prompt to clone that repository onto your local environment/computer
-    ''' bash
+    ```bash
      git clone <HTTP/SSH link>
-    '''
+    ```
     - The local should have:
         -  README.md (Mandatory)
         - .gitignore (Optional but recommended)
@@ -37,58 +36,58 @@ End to End Implementation:
 - Create template.py
 - Follow the structure from template.py
 - Automation to create folder or file by running the file
-    ''' python template.py'''
+    ```python template.py```
     This will create a basic project structure with all necessary files in place
     - Update repo 
-    '''bash 
+    ```bash 
     git add .
-    '''
-    '''bash 
+    ```
+    ```bash 
     git commit -m <message>
-    '''
-    ''' bash
+    ```
+    ``` bash
      git push origin main 
-    '''
+    ```
 ### 3. Project setup
 - Step 1: Create Virtual environment
- '''bash
+ ```bash
  conda create -n <envname> python=<version> -y
- '''
+ ```
 - Step 2: Activate  the virtual environment
-'''bash
+```bash
  conda activate <envname>
-'''
+```
 OR permanently turn on the environment for project folder
     1. CTRL/CMD + SHIFT + P
     2. Type : Select Interpreter
     3. Choose the created env
 - Step 3: Set up requirement.txt to include all the python libraries package with version use in the project. 
-'''bash 
+```bash 
 pip install -r requirements.txt
-'''
+```
 <p> NOTE: Please look up packages that you need. What include in the repo is just for practical purposes.<p>
 
 - Step 4: Create setup.py
     - Following this guide https://packaging.python.org/tutorials/packaging-projects/
     - Run setup.py to allow calling function from other file
-    '''bash
+    ```bash
      python setup.py
-     ''' 
+     ``` 
     - Ex: calling function from src/mlProject/config/configuration
-    '''python 
+    ```python 
     from srs.mlProject.config import configuration
-    '''
+    ```
 
 ### 4.1 Logging
 - Install logging package (https://docs.python.org/3/library/logging.html
 - Located src/mlProject/__init__.py 
-'''python 
+```python 
 from mlProject import logger 
-'''
+```
 - create logging folder
-'''python
+```python
 from src.mlProject.logging import logger
-'''
+```
 - Control work from different components of work
 
 ### 4.2 Exception
