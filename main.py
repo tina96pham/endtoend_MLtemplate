@@ -1,3 +1,3 @@
-from src.mlProject import logger 
+from mlProject.utils.common import read_yaml
 
-logger.info("testing log")
+
