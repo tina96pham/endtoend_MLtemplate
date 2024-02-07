@@ -116,29 +116,37 @@ from src.mlProject.logging import logger
 - Use for common utility in the project such as load json file,... ensure production grade code
 
 ### 6.1. Notebooks
-- EDA
+- EDA with jupyter
+- include data in the research folder
 - Model Building and Training
-- Data Visualization
 
 ### 6.2 Workflow
+<p> Require to create production grade code. Changes for variables and parameters for the code can be done in these files.</p>
+
 1. update config.yaml
+    - 
 2. update schema.yaml 
     - In schema: include columns and target columns and data type
 3. update params.yaml
+    - Include all parameters that will be used in the model building process
 4. update the entity
+    - Add new function or class based on task requirement
 5. update the configuration manager in src config
+    - Step 1: set constant that you won't be change i.e file path of yaml file
+
 6. update the components
 7. update the pipeline
 8. update the main.py
+    - root file
 9. update the app.py
+    - integration  point between frontend and backend
+    - training and prediction
 
 ### 7.1 Data Ingestion
-
-
-
-
-# 6. Notebook Experiment
-- EDA with jupyter
-- include data in the research folder
+- Step 1: Create data ingestion folder in config/cofig.yaml
+- Step 2: Put information about the data in schema.yaml
+- Step 3: Fill on params.yaml with something, should not be empty
+```python key:val```
+- Step 3: Write a script (data_ingestion.py) under data_ing
 
 
